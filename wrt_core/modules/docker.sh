@@ -104,7 +104,7 @@ _docker_stack_update_dockerd_depends_block() {
             in_depends = 0
             replaced = 0
         }
-        /^  DEPENDS:=\$\(ARCH_DEPENDS\) \\$/ {
+        /^  DEPENDS:=\$\((GO_)?ARCH_DEPENDS\) \\$/ {
             in_depends = 1
             replaced = 1
 
